@@ -65,13 +65,13 @@ with st.container():
     if terms_were_submitted:
         placeholder.button('Vote', disabled=True, key='disabled_vote', type='secondary')
         with st.spinner('Voting...'):
-            vote_for_terms(selected_terms, user_id, role='speaker')
+            vote_for_terms(selected_terms, user_id, role='audience')
             sleep(1)
         placeholder.button('Vote', disabled=False, key='reenabled_vote', type='secondary')
 
     if term_was_suggested:
         with st.spinner('Suggesting...'):
-            suggest_term( suggested_term, user_id, role='speaker')
+            suggest_term( suggested_term, user_id, role='audience')
             sleep(1)
 
 st.write("")
