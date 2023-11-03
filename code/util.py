@@ -18,15 +18,16 @@ def forever_word_cloud():
 # loc   : Where to write the wordcloud
 # Returns the location of the wordcloud
 def make_word_cloud(words, loc='data/word_cloud.png'):
-    wc = WordCloud(
-        background_color='white', 
+    wc = WordCloud(background_color='white',
         max_words = 20, 
         prefer_horizontal = .5,
         font_step = 2,
         relative_scaling = 0.6,
         width = 2000, 
         height = 1000, 
-        margin = 0)
+        font_path='data/SourceSansPro-ExtraLight.ttf', 
+        margin = 0
+    )
     wc.generate_from_frequencies(words)
     plt.imshow(wc, interpolation="bilinear")
     plt.axis("off")
