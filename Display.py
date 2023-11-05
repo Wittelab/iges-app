@@ -22,18 +22,21 @@ if 'last_update_time' not in st.session_state:
     st.session_state['last_update_time'] = time()
 
 
+# Barcode
 with st.container():
-    wordcloud = Image.open('data/word_cloud.png')
-    left_co, cent_co, last_co = st.columns([1,6,1])
-    with cent_co:
-        st.image(wordcloud, use_column_width='always')
-    
-    st.divider()
-    
     barcode = Image.open('data/qr_code.png')
     left_co, cent_co,last_co = st.columns([4,1,4])
     with cent_co:
+        st.subheader(":black[https://tinyurl.com/iges2023]")
         st.image(barcode, use_column_width='always')
+
+st.divider()
+
+with st.container():
+    wordcloud = Image.open('data/word_cloud.png')
+    left_co, cent_co, last_co = st.columns([1,2,1])
+    with cent_co:
+        st.image(wordcloud, use_column_width='auto')
 
 
 words = read_terms(role='speaker')
@@ -45,13 +48,13 @@ if words != st.session_state['last_words'] or time_since_update>60:
     make_word_cloud(words)
     st.session_state['last_words'] = words
     st.session_state['last_update_time'] = time()
-    print(f"\nChecking in 1 minute ", end="", flush=True)
+    print(f"\nResetting timer in 1 minute, updating wordcloud every 5 seconds ", end="", flush=True)
     st.rerun()
 else:
     #elapsed = int(time() - st.session_state['start_time'])
     #updated = int(time() - st.session_state['last_update_time'])
     #print(f"Total time alive: {elapsed}s. Time since last update: {updated}s")
-    print(f"."*5, end="", flush=True)
+    print(f".", end="", flush=True)
     sleep(5)
     st.rerun()
 #count = st_autorefresh(interval=2)

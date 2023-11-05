@@ -1,8 +1,34 @@
+import os
 from time import sleep
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from sqlitedict import SqliteDict
 import pandas as pd
+
+
+COLORS = [
+    '#ec3333',
+    '#eb1948',
+    '#e7005c',
+    '#dd006f',
+    '#d00082',
+    '#be1293',
+    '#a727a2',
+    '#8b36ae',
+    '#6941b7',
+    '#3749bc',
+    '#0060d3',
+    '#0073df',
+    '#0083df',
+    '#0091d3',
+    '#009cbe',
+    '#00a6a1',
+    '#00af7f',
+    '#00b75c',
+    '#3abc37',
+]
+COLORS.reverse()
+DEFAULT_COLOR = '#ffa755'
 
 
 def forever_word_cloud():
@@ -13,21 +39,37 @@ def forever_word_cloud():
         sleep(1)
 
 
+# Function to keep color consistent among common words 
+class SimpleGroupedColorFunc(object):
+    def __init__(self, color_to_words, default_color):
+        self.word_to_color = {word: color
+                              for (color, words) in color_to_words.items()
+                              for word in words}
+        self.default_color = default_color
+    def __call__(self, word, **kwargs):
+        return self.word_to_color.get(word, self.default_color)
+
+
 # From a list of word frequencies, generate a wordcloud
 # words : {'science': 55, 'rules': 34}
 # loc   : Where to write the wordcloud
 # Returns the location of the wordcloud
-def make_word_cloud(words, loc='data/word_cloud.png'):
-    wc = WordCloud(background_color='white',
-        max_words = 20, 
-        prefer_horizontal = .5,
-        font_step = 2,
-        relative_scaling = 0.6,
-        width = 2000, 
-        height = 1000, 
-        font_path='data/SourceSansPro-ExtraLight.ttf', 
-        margin = 0
-    )
+def make_word_cloud(words, top_n=20, loc='data/word_cloud.png'):
+    top_words = [k for k, v in sorted(words.items(), key=lambda x: x[1])]
+    top_words = [[i] for i in top_words]
+    color_to_words = dict(zip(COLORS, top_words))
+    grouped_color_func = SimpleGroupedColorFunc(color_to_words, DEFAULT_COLOR)
+    wc = WordCloud(background_color="white", 
+                   max_words = 25, 
+                   prefer_horizontal = 1,
+                   width = 1000, 
+                   height = 1000, 
+                   margin = 5,
+                   min_font_size=6,
+                   #max_font_size=255,
+                   relative_scaling=.6,
+                   font_path='data/Montserrat-Regular.ttf',
+                   color_func=grouped_color_func)
     wc.generate_from_frequencies(words)
     plt.imshow(wc, interpolation="bilinear")
     plt.axis("off")
@@ -218,9 +260,29 @@ def term_table(loc='data/app.sqlite'):
 # db_loc   : the location of the database to store terms
 # This will update the term table for display to the speaker upon first page load
 def populate_initial_terms(word_loc='data/starting_words.tsv', db_loc='data/app.sqlite'):
-    words = pd.read_csv(word_loc, sep="\t", names=['Word'])
-    words['Votes'] = 0
+    print("\nDisplay refresh!")
+    
+    # Load if needed
+    app_data = SqliteDict(db_loc, autocommit=True)
+    if 'status' not in app_data.keys():
+        app_data['status'] = 'Loading'
+
+    # Don't do anything if population has already happened
+    # NOTE: A hard reset can be done instead
+    if app_data['status'] == 'Loaded':
+        return
+    
+    # Otherwise, load the inital words, populate as suggestions and terms
+    # TODO: We can set the initial vote count too here, but its ignored for now
+    words = pd.read_csv(word_loc, sep="\t", names=['Word', 'Votes'])
     words['Allow it?'] = True
     for word in list(words['Word']):
         suggest_term(word, 'speaker', role='speaker', loc=db_loc)
     update_terms(words, loc=db_loc)
+    app_data['status'] = 'Loaded'
+
+
+def do_hard_reset():
+    print(f"\nPerforming hard reset...")
+    os.remove('data/app.sqlite')
+    populate_initial_terms()
