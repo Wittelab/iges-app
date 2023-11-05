@@ -23,5 +23,9 @@ ENTRYPOINT ["streamlit", "run", "Display.py", "--server.port=8080", "--server.ad
 # docker push us-east4-docker.pkg.dev/som-wittelab-red/iges-app/iges-app:latest
 
 
-# docker tag iges-app:latest ccario/iges-app:latest
-# docker push ccario/iges-app:latest
+# docker tag iges-app:latest ccario83/iges-app:latest
+# docker push ccario83/iges-app:latest
+
+
+# docker tag iges-app:latest us-east4-docker.pkg.dev/wittelab/iges-app/iges-app:latest
+# docker push us-east4-docker.pkg.dev/wittelab/iges-app/iges-app:latest

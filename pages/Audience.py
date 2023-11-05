@@ -55,10 +55,11 @@ with st.container():
         #    st.button('↻ Get latest options', 'new_terms_requested', type='secondary')
         #    st.write("")
 
-    #with cheat:
-    #    if st.button('Vote as many times as you like!'):
-    #        vote_for_terms(selected_terms, 'speaker', role='speaker')
-    #        st.session_state['has_voted'] = False
+    if user_id=='speaker':
+        with cheat:
+            if st.button('Vote as many times as you like!'):
+                vote_for_terms(selected_terms, 'speaker', role='speaker')
+                st.session_state['has_voted'] = False
 #st.divider()
 #
 #with st.container():
