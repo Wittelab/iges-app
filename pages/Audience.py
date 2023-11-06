@@ -32,7 +32,6 @@ if st.session_state['user_id'] != 'speaker':
     )
 
 
-
 # The main page
 with st.container():
     st.header(f"What does the future look like? :thinking_face:🗳")
@@ -40,36 +39,23 @@ with st.container():
             f"represent important research topics in the upcoming years"
     selected_terms = st.multiselect(
         prompt,
-        read_terms(),
+        read_terms(as_table=False),
         key = 'selected_terms',
         placeholder = 'Select terms...',
         default = None,
         max_selections = max_selections
     )
-    left_button, right_button, cheat = st.columns([3,5,10])
+    left_button, cheat = st.columns([3,5])
     with left_button:
         placeholder = st.empty()
         terms_were_submitted =  placeholder.button('Vote', 'terms_were_submitted', disabled=has_voted, type='secondary')
-        #with right_button:
-        #    # NOTE: upon press, script is refreshed anyways, but a "do nothing" is needed right below
-        #    st.button('↻ Get latest options', 'new_terms_requested', type='secondary')
-        #    st.write("")
 
     if user_id=='speaker':
         with cheat:
             if st.button('Vote as many times as you like!'):
                 vote_for_terms(selected_terms, 'speaker', role='speaker')
                 st.session_state['has_voted'] = False
-#st.divider()
-#
-#with st.container():
-#    st.header(f"I'd like to suggest my own term! :point_up:")
-#    suggested_term = st.text_input(
-#        'Suggest a term to the speaker', 
-#        'Artificial Intelligence',
-#        key = 'suggested_term',
-#    )
-#    term_was_suggested = st.button('Suggest', 'term_was_suggested', type='secondary')
+
 
 with st.container():
     message = st.empty()
@@ -86,12 +72,6 @@ with st.container():
                 sleep(1)
             placeholder.button('Vote', disabled=True, key='disabled_vote', type='secondary')
             message.success("Thanks for your vote!")
-            #placeholder.button('Vote', disabled=False, key='reenabled_vote', type='secondary')
-
-#    if term_was_suggested:
-#        with st.spinner('Suggesting...'):
-#            suggest_term( suggested_term, user_id, role='audience')
-#            sleep(1)
 
 st.write("")
 #suggested = read_suggestions()

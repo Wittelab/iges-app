@@ -1,5 +1,5 @@
 import os
-from time import sleep
+from time import sleep, time
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from sqlitedict import SqliteDict
@@ -31,14 +31,6 @@ COLORS.reverse()
 DEFAULT_COLOR = '#ffa755'
 
 
-def forever_word_cloud():
-    while True:
-        words = read_terms(role='speaker')
-        words = {k:v['vote'] for k,v in words.items()}
-        make_word_cloud(words)
-        sleep(1)
-
-
 # Function to keep color consistent among common words 
 class SimpleGroupedColorFunc(object):
     def __init__(self, color_to_words, default_color):
@@ -54,22 +46,24 @@ class SimpleGroupedColorFunc(object):
 # words : {'science': 55, 'rules': 34}
 # loc   : Where to write the wordcloud
 # Returns the location of the wordcloud
-def make_word_cloud(words, top_n=20, loc='data/word_cloud.png'):
+def make_word_cloud(words, max_words=25, loc='data/word_cloud.png'):
     top_words = [k for k, v in sorted(words.items(), key=lambda x: x[1])]
     top_words = [[i] for i in top_words]
     color_to_words = dict(zip(COLORS, top_words))
+
     grouped_color_func = SimpleGroupedColorFunc(color_to_words, DEFAULT_COLOR)
     wc = WordCloud(background_color="white", 
-                   max_words = 25, 
+                   #max_words = max_words, 
                    prefer_horizontal = 1,
                    width = 1000, 
                    height = 1000, 
                    margin = 5,
+                   #scale = 1,
                    min_font_size=6,
-                   #max_font_size=255,
-                   relative_scaling=.6,
-                   font_path='data/Montserrat-Regular.ttf',
-                   color_func=grouped_color_func)
+                   max_font_size = 80,
+                   relative_scaling = .7,
+                   font_path='data/Montserrat-Regular.ttf')#,
+                   #color_func=grouped_color_func)
     wc.generate_from_frequencies(words)
     plt.imshow(wc, interpolation="bilinear")
     plt.axis("off")
@@ -77,135 +71,161 @@ def make_word_cloud(words, top_n=20, loc='data/word_cloud.png'):
     return(loc)
 
 
-# An audience member can suggest a new term, `new_suggestion` which 
-#   will be displayed to the speaker as a suggestion for the term box
-# new_suggestion  : a word/phrase suggested as a term to vote on for the word cloud
-# user_id         : the hash key representing a unique user
-# role            : 'speaker' or 'audience'; 'speaker' can vote multiple times
-# loc             : the location of the database to store suggestions
-# Will write a word entry into the database like this:
-# suggestions = {'word': {'count': 1, 'users': ['531ACD4...','132FF3...'], 'selected': True}}
-def suggest_term(new_suggestion, user_id, role='audience', loc='data/app.sqlite'):
-    if not isinstance(new_suggestion, str):
-        return False
-    
-    # Get suggetions
+def modify_suggestion(action, word, user_id, role='audience', loc='data/app.sqlite'):
     app_data = SqliteDict(loc, autocommit=True)
+    # Create a new suggestions dictionary, or load the old one
     suggestions = dict()
     if 'suggestions' in app_data.keys():
         suggestions = app_data['suggestions']
-    #print(f"Loaded suggestions {suggestions}")
     
-    # Add suggestions
-    if new_suggestion not in suggestions.keys():
-        suggestions[new_suggestion] = {
-            'count'    : 1, 
-            'users'    : [user_id],
-            'selected' : False
-        }
-        # Speaker suggestions are automatically allowed
-        # This is especially important for inital list population
-        if role=='speaker':
-            suggestions[new_suggestion]['selected'] = True
-    elif user_id not in suggestions[new_suggestion]['users'] or role=='speaker':
-        suggestions[new_suggestion]['count'] +=1
-        suggestions[new_suggestion]['users'].append(user_id)
-
-    
+    # CRUD like actions 
+    #print(f"SUGGESTION     {action.upper():<8s} {word:<10s}")
+    if action == 'create':
+        if word not in suggestions.keys():
+            suggestions[word] = {
+                'count'    : 1, 
+                'users'    : [user_id],
+                'selected' : role=='speaker'
+            }
+        else:
+            # It's already present, increase the count and add the user_id
+            suggestions[word]['count'] += 1
+            suggestions[word]['users'].append(user_id)
+    elif action == 'read':
+        result = None
+        try:
+            result = suggestions[word]
+            app_data.close()
+        except KeyError:
+            result = None
+        return result
+    elif action == 'allow':
+        suggestions[word]['selected'] = True
+        modify_term('create', word, user_id, role)
+    elif action == 'disallow':
+        suggestions[word]['selected'] = False
+        modify_term('delete', word, user_id, role)
+    elif action=='delete':
+        try:
+            del suggestions[word]
+        except KeyError:
+            pass
+        modify_term('delete', word, user_id, role)
+    #print(f"Saving suggestions...")
     app_data['suggestions'] = suggestions
     app_data.close()
 
 
 # Read suggested terms in the format:
 # suggestions = {'word': {'count': 1, 'users': ['531ACD4...','132FF3...'], 'selected': True}}
-# loc : the location of the database to store suggestions
-# Returns suggestions
-def read_suggestions(loc='data/app.sqlite'):
+# loc      : the location of the database to store suggestions
+# as_table : whether to return as a pandas dataframe or just the suggestions dictionary
+#            Column headers: 'Word' (str), 'Suggestion Count' (int), 'Allow it?' (bool)
+#            Sorted descendingly by 'Suggestion Count'
+def read_suggestions(loc='data/app.sqlite', as_table=True):
+    # Get the suggestions dictionary
     app_data = SqliteDict(loc, autocommit=True)
     if 'suggestions' not in app_data.keys():
         suggestions = {}
     else:
         suggestions = app_data['suggestions']
     app_data.close()
-    return suggestions
+
+    if as_table:
+        # Make the table if requested
+        table = pd.DataFrame(columns=['Word', 'Suggestion Count', 'Allow it?'])
+        for word, props in suggestions.items():
+            table.loc[len(table.index)] = [word, props['count'], props['selected']]
+        table = table\
+                .sort_values('Word', ascending=True)\
+                .reset_index(drop=True)\
+                .set_index('Word')
+        #table = table.reset_index(drop=True).set_index('Word')
+        return table
+    else:
+        return suggestions
 
 
-# Read suggested terms as a pandas DataFrame
-# Column headers: 'Word' (str), 'Suggestion Count' (int), 'Allow it?' (bool)
-# loc : the location of the database to store suggestions
-# Returns the DataFrame
-def suggestion_table(loc='data/app.sqlite'):
-    suggestions = read_suggestions(loc=loc)
-    table = pd.DataFrame(columns=['Word', 'Suggestion Count', 'Allow it?'])
-    for word, props in suggestions.items():
-        table.loc[len(table.index)] = [word, props['count'], props['selected']]
-    table = table\
-            .sort_values('Suggestion Count', ascending=False)\
-            .reset_index(drop=True)\
-            .set_index('Word')
-    return table
-
-
-# After the speaker has approved a word, it gets moved to the term list
-#   which allows the audience members to vote on it for display in the word cloud
-# suggestion_table : a pandas dataframe with 'Word' (str), 'Suggestion Count' (int), 'Allow it?' (bool)
-# loc              : the location of the database to read/store suggestions/terms
-# This will create/remove term entries and update suggestion entries:
-# terms = {'term' : {'vote':0, 'users': ['531ACD4...','132FF3...']}}
-def update_terms(suggestion_table, loc='data/app.sqlite'):
-    suggestion_table = pd.DataFrame(suggestion_table).reset_index()
-    allowed_terms = list(suggestion_table[suggestion_table['Allow it?']==True]['Word'])
-    unallowed_terms = list(suggestion_table[suggestion_table['Allow it?']==False]['Word'])
-
-    # Get terms
+def modify_term(action, word, user_id, role='audience', loc='data/app.sqlite'):
     app_data = SqliteDict(loc, autocommit=True)
+    # Create a new terms dictionary, or load the old one
     terms = dict()
     if 'terms' in app_data.keys():
         terms = app_data['terms']
-    #print(f"Loaded terms")
     
-    # Update terms data
-    for allowed_term in allowed_terms:
-        if allowed_term not in terms.keys():
-            terms[allowed_term] = {
-                'vote'     : 0,
-                'users'    : [],
+    #print(f"TERM           {action.upper():<8s} {word:<10s}")
+    if action == 'create':
+        if word not in terms.keys():
+            terms[word] = {
+                'vote'     : 1, 
+                'users'    : [user_id],
             }
-    # Only allowed terms
-    terms = {k:v for (k,v) in terms.items() if k in allowed_terms}
+        else:
+            # We could warn, but no action is ok too
+            #print("CREATE IGNORED; ALREADY EXISTS")
+            pass
+    elif action == 'vote':
+        if word in terms.keys():
+            # Increase the vote and add the user_id
+            # (as long as an audience member hasn't already voted)
+            if (role == 'audience' and 'user_id' not in terms[word]['users']) or role == 'speaker':
+                terms[word]['vote'] += 1
+                if user_id not in terms[word]['users']:
+                    terms[word]['users'].append(user_id)
+    elif action == 'read':
+        result = None
+        try:
+            result = terms[word]
+        except KeyError:
+            result = None
+        return result
+    elif action=='delete':
+        try:
+            del terms[word]
+        except KeyError:
+            pass
+    #print(f"Saving terms...")
     app_data['terms'] = terms
-    #print(f"Saved terms")
-
-    # Get & update suggestions data
-    for allowed_term in allowed_terms:
-        if allowed_term not in app_data['suggestions']:
-            suggest_term(allowed_term, 'speaker', role='speaker')
-        app_data['suggestions'][allowed_term]['selected'] = True
-    for unallowed_term in unallowed_terms:
-        if unallowed_term not in app_data['suggestions']:
-            suggest_term(unallowed_term, 'speaker', role='speaker')
-        app_data['suggestions'][unallowed_term]['selected'] = False
-    #print(f"Saved suggestions")
     app_data.close()
 
 
-# Read the term list
-# role : 'speaker' or 'audience'; 'speaker' can vote multiple times
-# loc  : the location of the database to read terms
-# Updates terms:
-# terms = {'term' : {'vote':0, 'users': ['531ACD4...','132FF3...']}}
-def read_terms(role='audience', loc='data/app.sqlite'):
+# Read terms in the format:
+# terms = {'word': {'vote': 1, 'users': ['531ACD4...','132FF3...']}}
+# loc      : the location of the database to store suggestions
+# role     : the type of user requesting the terms ('audience' or 'speaker')
+# as_table : whether to return as a pandas dataframe or just the suggestions dictionary
+#            Column headers: 'Word' (str), 'Votes' (int)
+#            Sorted descendingly by 'Votes'
+def read_terms(loc='data/app.sqlite', role='audience', as_table=True):
     app_data = SqliteDict(loc, autocommit=True)
     if 'terms' not in app_data.keys():
         terms = {}
     else:
         terms = app_data['terms']
     app_data.close()
-    # The audience can only see the terms, not the votes, etc.
-    if role == 'audience':
-        return terms.keys()
+
+    if as_table:
+        # Make the table if requested
+        table = pd.DataFrame(columns=['Word', 'Votes'])
+        for word, props in terms.items():
+            table.loc[len(table.index)] = [word, props['vote']]
+        table = table\
+                .sort_values(['Votes', 'Word'], ascending=[False, True])\
+                .reset_index(drop=True)\
+                .set_index('Word')
+        if role == 'audience':
+            # The audience can only see the terms, not the votes, etc.
+            table.drop(columns='Votes')
+        else:
+            return table
     else:
-        return terms
+        # The audience can only see the terms, not the votes, etc.
+        if role == 'audience':
+            choices = terms.keys()
+            choices = sorted(choices)
+            return choices
+        else:
+            return terms
 
 
 # When an audience member votes on terms, this function updates the database
@@ -214,45 +234,42 @@ def read_terms(role='audience', loc='data/app.sqlite'):
 # role       : 'speaker' or 'audience'; 'speaker' can vote multiple times
 # loc        : the location of the database to store terms
 # Updates the database to tally votes (increments 'vote'):
-# terms = {'term' : {'vote':0, 'users': ['531ACD4...','132FF3...']}}
+# terms = {word : {'vote':0, 'users': ['531ACD4...','132FF3...']}}
 def vote_for_terms(voted_terms, user_id, role='audience', loc='data/app.sqlite'):
     if isinstance(voted_terms, str):
         voted_terms = [voted_terms]
     if not isinstance(voted_terms, list):
         return
-    
-    # Get terms
-    app_data = SqliteDict(loc, autocommit=True)
-    terms = dict()
-    if 'terms' in app_data.keys():
-        terms = app_data['terms']
-    
+    print(f"---{int(time())} VOTING BY {user_id}---")
     # Vote for the term (only once if not the speaker)
-    for voted_term in voted_terms:
-        if user_id not in terms[voted_term]['users'] or role=='speaker':
-            terms[voted_term]['vote'] +=1
-            terms[voted_term]['users'].append(user_id)
-    # Save
-    app_data['terms'] = terms
-    app_data.close()
+    for term in voted_terms:
+        modify_term('vote', term, user_id, role)
 
 
-# Read voted terms as a pandas DataFrame
-# Column headers: 'Word' (str), 'Votes' (int)
-# loc : the location of the database to read terms
-# Returns the DataFrame
-def term_table(loc='data/app.sqlite'):
-    terms = read_terms(role='speaker', loc=loc)
-    table = pd.DataFrame(columns=['Word', 'Votes'])
-    if not terms:
-        return table
-    for word, props in terms.items():
-        table.loc[len(table.index)] = [word, props['vote']]
-    table = table\
-            .sort_values('Votes', ascending=False)\
-            .reset_index(drop=True)\
-            .set_index('Word')
-    return table
+def update_terms(edited_df, user_id='speaker', role='speaker'):
+    current_suggestions = read_suggestions(as_table=False)
+    # Set the default 'Allow it?' state to true 
+    edited_df = edited_df.fillna(True)
+    print(f"---{int(time())} SUGGESTION UPDATE---")
+    # Check if anything was added or allowed/disallowed
+    #print(edited_df)
+    edited_df = edited_df.reset_index()
+    for i,r in edited_df.iterrows():
+        word = r['Word']
+        allowed = r['Allow it?']
+        if r['Word'] not in current_suggestions.keys():
+            modify_suggestion('create', word, user_id, role)
+            current_suggestions = read_suggestions(as_table=False)
+            allowed = True
+        if allowed:
+            modify_suggestion('allow', word, user_id, role)
+        elif not allowed:
+            modify_suggestion('disallow', word, user_id, role)
+
+    # Check to see if anything was deleted
+    for word in list(current_suggestions.keys()):
+        if word not in list(edited_df['Word']):
+            modify_suggestion('delete', word, user_id, role)
 
 
 # Populate the initial term table and update the database
@@ -260,8 +277,6 @@ def term_table(loc='data/app.sqlite'):
 # db_loc   : the location of the database to store terms
 # This will update the term table for display to the speaker upon first page load
 def populate_initial_terms(word_loc='data/starting_words.tsv', db_loc='data/app.sqlite'):
-    print("\nDisplay refresh!")
-    
     # Load if needed
     app_data = SqliteDict(db_loc, autocommit=True)
     if 'status' not in app_data.keys():
@@ -274,15 +289,29 @@ def populate_initial_terms(word_loc='data/starting_words.tsv', db_loc='data/app.
     
     # Otherwise, load the inital words, populate as suggestions and terms
     # TODO: We can set the initial vote count too here, but its ignored for now
+    print("Loading initial terms...")
     words = pd.read_csv(word_loc, sep="\t", names=['Word', 'Votes'])
     words['Allow it?'] = True
-    for word in list(words['Word']):
-        suggest_term(word, 'speaker', role='speaker', loc=db_loc)
-    update_terms(words, loc=db_loc)
+    for i,r in words.iterrows():
+        word = r['Word']
+        vote = int(r['Votes'])
+        modify_suggestion('create', word, 'speaker', role='speaker', loc=db_loc)
+        modify_term('create', word, 'speaker', role='speaker', loc=db_loc)
+        for i in range(vote):
+            modify_term('vote', word, 'speaker', role='speaker')
+
     app_data['status'] = 'Loaded'
+    app_data.close()
+    words = read_terms(role='speaker', as_table=False)
+    words = {k:v['vote']+1 for k,v in words.items()}
+    make_word_cloud(words)
 
 
 def do_hard_reset():
-    print(f"\nPerforming hard reset...")
-    os.remove('data/app.sqlite')
+    print(f"Performing hard reset...")
+    try:
+        os.remove('data/app.sqlite')
+        os.remove('data/wordcloud.png')
+    except:
+        pass
     populate_initial_terms()

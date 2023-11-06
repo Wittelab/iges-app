@@ -3,6 +3,8 @@ from code.util import *
 import pandas as pd
 from streamlit_js_eval import streamlit_js_eval
 
+st.set_page_config(layout="wide")
+
 # Create speaker role for anyone accessing this page first
 user_id = None
 if 'user_id' not in st.session_state:
@@ -10,12 +12,19 @@ if 'user_id' not in st.session_state:
 else: 
     user_id = st.session_state['user_id']
 
-with st.container():
-    st.header(f"Term suggestions from the audience :point_down:")
+
+
+
+
+
+lm, left, center, right, rm = st.columns([3,15,3,15,3])
+with left:
+    st.header(f"Term suggestions from audience :point_down:")
     edited_df = st.data_editor(
-        suggestion_table().drop(columns='Suggestion Count'), 
+        read_suggestions().drop(columns='Suggestion Count'),
         key = 'selected_suggestions',
-        use_container_width = True, 
+        use_container_width = True,
+        height=1000,
         num_rows = 'dynamic',
     )
     # NOTE: In streamlit order matters! Since this button affects the table below
@@ -24,22 +33,18 @@ with st.container():
     #       is called, and then the rest of the page renders
     if st.button('Update term candidates', type='secondary'):
         update_terms(edited_df)
-    #left_button, right_button, space= st.columns([4,4,6])
-    #with left_button:
-    #    # NOTE: upon press, script is refreshed anyways, but a "do nothing" is needed right below
-    #    st.button('↻ Get latest data', 'latest_suggestions_requested', type='secondary')
-    #    st.write("")
-    #with right_button:
-    #    update_term_options = st.button('Update term choices', type='secondary')
+        streamlit_js_eval(js_expressions="parent.window.location.reload()")
 
-st.divider()
+#with center:
+#    st.write("⇨")
 
-with st.container():
+with right:
     st.header(f"Audience votes for wordcloud 🗳")
     st.data_editor(
-        term_table(), 
+        read_terms(role='speaker'),
         key = 'selected_terms',
-        use_container_width = True, 
+        use_container_width = True,
+        height=1000,
     )
     # NOTE: upon press, script is refreshed anyways, but a "do nothing" is needed right below
     st.button('↻ Get Latest Vote Tally', 'latest_votes_requested', type='secondary')
@@ -49,11 +54,7 @@ st.divider()
 
 with st.container():
     hard_reset = st.button('Hard Reset', type='primary')
-
 message = st.empty()
-
-
-
 if hard_reset:
     do_hard_reset()
     message.warning('Successfully reset, reloading the page in 3 seconds', icon="⚠️")
