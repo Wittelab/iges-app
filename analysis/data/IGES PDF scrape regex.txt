@@ -1,0 +1,1709 @@
+1
+Multi-omics Integration Identifies Genes Influencing Traits
+Associated with Cardiovascular Risks
+S. Acharya*1,3, L. Liao1,2, W. Jung1,2, E. Kang1,2, V. A. Moghaddam1
+
+1
+Department of Statistical Genomics, Washington University
+School of Medicine, St Louis, Missouri, United States of America;
+2
+
+3
+Department of Computational and Data Sciences, Washington
+University, St Louis, Missouri, United States of America
+*Presenting Author
+
+2
+Joint Analysis of Longitudinal Omics Data and Time-ToEvent Outcomes in the Context of Aging
+Konstantin G. Arbeev1*, Olivia Bagley1
+, Aravind Lathika
+
+1
+Social Science Research Institute, Duke University, Durham, North
+Carolina, United States of America; 2
+Department of Biostatistics
+
+3
+The Intergenerational Transmission of Mental Health
+Disorders: A Systematic Review of Molecular Genetic
+Studies
+
+1
+Medical Research Council Integrative Epidemiology Unit at the
+University of Bristol, Bristol, United Kingdom; 2
+Population Health
+
+4
+Polygenic Risk Score for Partial Lipodystrophy Based on
+Clustered Phenotypes – Modelling and Validation in UK
+Biobank and Oxford Biobank
+
+1
+The Oxford Centre for Diabetes, Endocrinology and Metabolism
+(OCDEM), University of Oxford, Oxford, United Kingdom; 2
+The
+
+5
+MRC Population Health Research Unit, CTSU, NDPH, University
+of Oxford, United Kingdom; 6
+Biosciences Institute, Faculty of
+
+5
+Leveraging Identity by Descent within Biobanks to
+Elucidate Genetic Architecture of Dilated Cardiomyopathy
+James T. Baker1
+
+1
+Vanderbilt Genetics Institute, Division of Genetic Medicine,
+Vanderbilt University Medical Center, Nashville, Tennessee, United
+States of America; 2
+
+6
+A Cloud-Based Bioinformatic Pipeline Tool to Assess
+Sex-Specific Genetic Effects on Orofacial Cleft Risk using
+Genome Sequenced Trios
+
+1
+Department of Biostatistics, Bloomberg School of Public
+Health, Johns Hopkins University, Baltimore, Maryland, United
+States of America; 2
+
+6
+McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins
+University School of Medicine, Baltimore, Maryland, United States
+of America; 7
+
+7
+Revealing Genetic Signatures of Lung Cancer Histologic
+Subtype Using Deep Learning
+Michael J. Betti1*, Melinda C. Aldrich1
+
+1
+Division of Genetic Medicine, Vanderbilt University Medical
+Center, Nashville, Tennessee, United States of America; 2
+Clare Hall,
+
+8
+Sex-specific Blood DNA Methylation in Rab-regulatory
+Genes Underly Sex-biased Risk of Recurrence in Unprovoked
+Venous Thromboembolism
+
+1
+Dalla Lana School of Public Health, University of Toronto,
+Toronto, Canada; 2
+Department of Medicine, McGill University,
+
+10
+Integrating Large-scale Priors for In-silico Functionalization
+of GWAS Associated Loci Using Machine Learning Models
+Krittika Bhattacharyya1,2*, Samsiddhi Bhattacharjee2
+
+1
+Department of Statistics, University of Calcutta, Kolkata, India;
+2
+National Institute of Biomedical Genomics, Kalyani, India
+
+11
+Predicting Gene-Driven Cortical Changes in Neurologic
+Disease through the Neuroimaging PheWAS
+Xavier Bledsoe, Eric Gamazon
+
+12
+Unravelling the Interplay between Type 2 Diabetes,
+Genetics, and Metabolite Levels
+Ozvan Bocher1*, Archit Singh1,2, Ana Luiza Arruda1,2, Peter
+
+1
+Institute of Translational Genomics, Helmholtz Zentrum
+München, German Research Center for Environmental Health,
+Neuherberg, Germany; 2
+
+13
+Metabolic Reprogramming Induced by Periodic Veganism
+in Humans
+Ozvan Bocher1*, Archit Singh1,2, Ana Luiza Arruda1,2, Peter
+
+1
+Institute of Translational Genomics, Helmholtz Zentrum
+München, German Research Center for Environmental Health,
+Neuherberg, Germany; 2
+
+14
+A Method to Quantify Bias and Identify Spurious
+Correlations in Biobanks
+Lindsay B. Breidenbach1
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University, Nashville,
+Tennessee, United States of America
+Biobanks collect medical, genomic, and/or survey
+
+15
+Novel Systematic Method for Identifying Congenital
+Anomaly Cases in the EHR for the Purpose Identifying New
+Causes of Congenital Anomalies
+
+16
+Signal Mapping Methods for Region-level Association
+Adaptive to Local Linkage Disequilibrium (LD)
+Myriam Brossard1*, Kexin Luo1
+
+1
+Lunenfeld-Tanenbaum Research Institute, Sinai Health, Toronto,
+Canada; 2
+Hospital for Sick Children Research Institute, Toronto,
+
+17
+Adjusting Collider Bias for Disease Progression Trait Using
+Bivariate Mendelian Randomization
+Siyang Cai1
+
+1
+Department of Health Sciences, University of Leicester
+Genome-wide association studies (GWAS) have
+provided a large number of genetic markers that can be
+
+18
+Lymphocyte Count-derived Polygenic Score and Interindividual Variability in CD4 T-cell Recovery in Response to
+Antiretroviral Therapy
+Kathleen M. Cardone1
+
+1
+Department of Genetics, University of Pennsylvania, Philadelphia,
+Pennsylvania, United States of America; 2
+Genomics and
+
+19
+Factors Influencing the Portability of Gene Expression
+Imputation in Transcriptome-Wide Association Studies
+across Ancestry
+
+1
+Department of Biostatistics, University of California Los
+Angeles, Los Angeles, California, United States of America; 2
+Department of Computational Medicine, David Geffen School
+
+20
+Autism Heterogeneity Related to Early-life Exposures:
+Multi-ancestry Results from the SPARK Sample
+Charikleia Chatzigeorgiou1,2, Behrang Mahjani1,2, Marina
+
+1
+Department of Psychiatry, Mount Sinai School of Medicine,
+New York, New York; 2
+Seaver Autism Center for Research and
+
+21
+Inference of Causal Metabolite Networks in the Presence
+of Invalid Instrumental Variables with GWAS Summary
+Data
+
+1
+Division of Biostatistics, School of Public Health, University of
+Minnesota, Minneapolis, Minnesota, United States of America;
+2
+
+22
+Investigating Pleiotropy as an Explanation for the Inverse
+Association between Cancer and Dementia
+Dorothy Chen1
+
+23
+Summary Statistics from Large-scale Gene-environment
+Interaction Studies for Re-analysis and Meta-analysis
+Duy T. Pham,1
+
+1
+Human Genetics Center, Department of Epidemiology, Human
+Genetics and Environmental Sciences, School of Public Health, The
+University of Texas Health Science Center at Houston, Houston,
+
+24
+FlexNet: A Flexible Network-Based Framework for
+Identifying Drug-Disease Relationships for Repurposing
+Opportunities and Prediction of Adverse Effects
+
+1
+ Vanderbilt University; 2
+ Vanderbilt University Medical Center
+Predicting drug-disease relationships, such as new
+
+25
+Imputation Efficacy Across Global Human Populations
+Jordan L. Cahoon1,2,3, Xinyue Rui1,*, Echo Tang2,*, Christopher
+Simons2
+
+1
+Center for Genetic Epidemiology, Department of Population
+and Public Health Sciences, Keck School of Medicine, University
+of Southern California, Los Angeles, California, United States
+
+26
+Genetic Determinants of Coronary Heart Disease in
+Hispanic/Latinos: Electronic Health Records
+Geetha Chittoor1*, Navya Shilpa Josyula1
+
+1
+Department of Population Health Sciences, Geisinger, Danville,
+Pennsylvania, United States of America; 2
+Department of
+
+27
+Multi-ancestry Genome-wide Association Studies of ACE
+Inhibitor-induced Cough and Chronic Dry Cough Implicate
+Neurophysiological Functions
+
+1
+Department of Population Health Sciences, University of Leicester,
+Leicester, United Kingdom; 2
+Laboratory for Molecular Cardiology,
+
+28
+APOE4-stratified GWAS of Multiple Cognitive Domains in
+Non-Hispanic White and Non-Hispanic Black Older Adults
+Alex G Contreras1*, Skylar Walters1
+
+1
+Vanderbilt Memory and Alzheimer’s Center, Vanderbilt
+University Medical Center, Nashville, Tennessee, United States
+of America; 2
+
+3
+Department of Medicine, University of Washington, Seattle,
+WA, United States of America; 4
+Department of Psychiatry and
+
+29
+Comparative Analysis of Whole Exome Sequencing in
+Bipolar Disorder Case-Control Data
+Brandon J. Coombes1*, Nicholas B. Larson1
+
+1
+Department of Quantitative Health Sciences, Mayo Clinic,
+Rochester, Minnesota, United States of America; 2
+Department of
+
+30
+Exploring Similarities and Differences Between Local
+Genetic Correlation Methods
+Rupal L. Shah1
+
+1
+Population Health Sciences Institute, Faculty of Medical Sciences,
+Newcastle University, Newcastle upon Tyne, United Kingdom;
+2
+
+31
+Epigenome-wide Associations with Age and Sex and
+Asthma
+Denise Daley1,2, Dentisa Vasileva1
+
+1
+Centre for Heart Lung Innovation, University of British Columbia
+and Saint Paul’s Hospital, Vancouver British Columbia,
+Canada; 2
+
+32
+Integrative Genetic and Exposomic Analysis of Mental
+Health Problems in Early Childhood
+Hayley A. Sowards, Karanvir Singh, Karmel W. Choi, Jessica K.
+
+1
+Department of Medical Genetics, University of British Columbia;
+2
+Department of Psychiatry, Harvard Medical School/Massachusetts
+
+33
+APOE-ɛ4 and Coronary Artery Disease: Effect Modification
+by Sex and Gender in a Multi-ancestry Sample from the UK
+Biobank
+
+1
+Montreal Heart Institute, Montréal, Quebec, Canada; 2
+Université de
+Montréal Beaulieu-Saucier Pharmacogenomics Center, Montréal,
+
+34
+Proteome-wide Mendelian Randomization of Adverse
+Outcomes in Human Heart Failure
+Marie-Joe Dib1*, Michael Levin1,2, Lei Zhao3
+
+1
+Division of Cardiovascular Medicine, Hospital of the University
+of Pennsylvania, Philadelphia, Pennsylvania, United States of
+America; 2
+
+5
+MRC Integrative Epidemiology Unit, University of Bristol, Bristol,
+United Kingdom; 6 Department of Public Health and Primary Care,
+University of Cambridge, Cambridge, United Kingdom
+
+35
+Genetic Connection between Coronary Artery Disease and
+Stroke
+Kexin Ding1,2, Kun Wang1,2, Xiaoyi Li1,2, Xueying Qin1,2†*, Yiqun
+
+37
+Construction, Evaluation, and AOP Framework-based
+Application of the EpPRS as a Genetic Surrogate for
+Assessing Environmental Pollutants
+
+1
+Department of Environmental Genomics, Jiangsu Key Laboratory
+of Cancer Biomarkers, Prevention and Treatment, Collaborative
+Innovation Center for Cancer Personalized Medicine, Nanjing
+
+38
+Relating Gene Co-expression qtls to PRSs via IndividualSpecific Networks
+Edoardo Gervasoni1*, Behnam Yousefi2,3,4, Federico Melograna2
+,
+
+1
+BIO3 Systems Genetics, GIGA-R, Université de Liège, Liège,
+Belgium; 2
+BIO3 Systems Medicine, Department of Human
+
+39
+Sex Differences in the Genetic Architecture of Alzheimer’s
+Disease Cognitive Endophenotypes
+Jaclyn M. Eissman*1,2; Alexandra N. Smith*1
+
+1
+Vanderbilt Memory & Alzheimer’s Center, Vanderbilt University
+Medical Center, Nashville, Tennessee, United States of America;
+2
+
+40
+Coronary Heart Disease and Type 2 Diabetes Metabolomic
+Signatures in a Middle Eastern Cohort
+Mohamed Elshrif1*, Keivin Isufaj1
+
+1
+Qatar Computing Research Institute, Hamad Bin Khalifa
+University, Qatar; 2
+Clinical Research, Trauma & Vascular Surgery,
+
+5
+Anti-doping Lab Qatar, Qatar; 6 Department of Internal Medicine,
+Allergy and Immunology, Hamad Medical Corporation, Qatar
+*Presenting author
+
+41
+X Chromosome Association Study of Asthma
+Aida Eslami1,2*, Mozart Nerva Deneus1
+, Zhonglin Li1
+
+1
+Institut Universitaire de Cardiologie et de Pneumologie de
+Québec, Université Laval, Quebec, Quebec, Canada; 2
+Department
+
+42
+Genomics Policy Analysis in Precision Medicine with Health
+Disparity Lens
+Kelly R. Estilette*
+
+43
+Estimation of Prevalence and Carrier Frequency of
+Wilson’s Disease in Thai Population Using Whole-genome
+Population Data Set
+
+1
+Center for Medical Genomics, Faculty of Medicine Ramathibodi
+Hospital, Mahidol University, Bangkok, Thailand, 2
+Program
+
+44
+Direct and INdirect Effects Analysis of Genetic lOci (DINGO):
+Increasing the Power of Locus Discovery in GWAS MetaAnalyses of Perinatal Phenotypes
+Liang-Dar Hwang1
+
+1
+Institute for Molecular Bioscience, The University of Queensland,
+Brisbane, Australia; 2
+Gilead Sciences, Inc, Forest City, California,
+
+45
+Dimensionality Reduction with Network Regularization in
+Single-cell Expression Analysis
+Huaying Fang1
+
+1
+Academy of Multidisciplinary Studies, Capital Normal University,
+Beijing, China; 2
+School of Mathematical Sciences, Capital Normal
+
+46
+Assessing the Causal Effect of SARS-CoV-2 Infection and
+COVID-19 Severity on Complement System Activation
+using Mendelian Randomization
+
+1
+Institute for Biomedicine (affiliated to the University of Lübeck),
+Eurac Research, Bolzano, Italy; 2
+Institute of Hygiene & Medical
+
+47
+Differential Gene Expression Analysis Reveals Genes
+Underlying the Transition to T2D in Hispanic/Latino
+Individuals
+
+1
+Vanderbilt University, Nashville, TN; 2
+University of North Carolina
+Chapel Hill, Chapel Hill, North Carolina, United States of America;
+
+4
+VUMC Clare Hall University of Cambridge, Nashville, Tennessee,
+United States of America; 5
+University North Carolina, Wake Forest,
+
+48
+The Sex-specific Genetic Architecture of Childhood Asthma
+Amelie Fritz,1,2 Anders U. Eliasen, PhD,2
+ Kasper Rasmussen,2
+
+1
+Department of Health Technology, Section for Bioinformatics,
+Technical University of Denmark, Kongens Lyngby,Denmark;
+2
+
+49
+Two-sample Mendelian Randomization Study of Circulating
+Metabolites and Prostate Cancer Risk in Hispanic
+Populations
+
+3
+), EPA (20:5n-3) (OR=0.81, 95% CI=0.77–0.85, p value =2.8x10-
+15), and arachidonate (20:4n-6) (OR=0.85, 95% CI=0.82–0.88,
+p value =3.3x10-20). The most significant associations (p value
+
+50
+Phenome-wide, Metabolomic and Proteomic Association
+Scan of SHROOM3 Haplotypes Based on Imputed Exonic
+Variants
+
+1
+Institute for Biomedicine (affiliated to the University of Lübeck),
+Eurac Research, Bolzano, Italy; 2
+Department of Human Genetics,
+
+3
+Institute of Biochemistry, Charité - Universitätsmedizin Berlin,
+Berlin, Germany
+ SHROOM3 encodes an actin-binding protein involved in cell
+
+51
+Exploring Fine-Mapping Using “SuSiE” on Simulated and
+Real Data
+Aida Gjoka, Heather J. Cordell
+
+52
+Cross-ancestry GWAS Meta-analysis of Keloids Discovers
+Novel Susceptibility Loci in Diverse Populations
+Catherine A. Greene1,2, Gabrielle Hampton1
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University Medical
+Center, Nashville, Tennessee, United States of America;
+2
+
+3
+Department of Preventive Medicine (Health and Biomedical
+Informatics), Northwestern University Feinberg School of Medicine,
+Chicago, Illinois, United States of America; 4
+
+5
+Center for Autoimmune Genomics and Etiology, Cincinnati
+Children’s Hospital Medical Center (CCHMC), Cincinnati, Ohio,
+United States of America; 6
+
+7
+Division of Epidemiology, Department of Medicine, Vanderbilt
+Genetics Institute, Vanderbilt University Medical Center, Nashville,
+Tennessee, United States of America; 8
+
+53
+Accounting for Genetic Regulation Alters Pregnancy
+Exposure-associated Differential Gene Expression Detected
+in Umbilical Cord Blood
+
+1
+Department of Mental Health, Johns Hopkins Bloomberg School
+of Public Health, Baltimore, Maryland, United States of America;
+2
+
+54
+Rare Variant Analysis in Small Samples: Improving Power
+Through Coupling Rare Variant Burden Analysis with Gene
+Set Enrichment
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University Medical
+Center, Nashville, Tennessee, United States of America; 2
+Division
+
+55
+Discovery of Genetic Factors for Atypical AntipsychoticInduced BMI Change: Obesity Related to Antipsychotic
+Liability & Exposure (ORAcLE) Consortium
+Shreyash Gupta1
+
+1
+Department of Population Health Sciences, Geisinger, Danville,
+Pennsylvania, United States of America; 2
+The Charles Bronfman
+
+3
+Psychiatry, Mount Sinai School of Medicine, New York, New York,
+United States of America; 4
+Genetics and Genomic Sciences, Mount
+
+6
+Regeneron Genetics Center, Tarrytown, New York, United States
+of America
+Outlining  genomic loci linked to antipsychotic induced
+
+56
+Unraveling Genetic Associations and Ancestral Influences
+on Fibroproliferative Diseases
+Gabrielle Hampton1
+
+1
+Vanderbilt University, Nashville, Tennessee, United States
+of America; 2
+Division of Genetic Medicine, Dept. of Medicine,
+
+57
+Identifying Rare Non-coding Genetic Aggregate
+Associations for Height in 331,100 Whole-genome
+Sequences
+
+1
+Clinical and Biomedical Sciences, University of Exeter, United
+Kingdom; 2
+Department of Biostatistics and Health Data Science,
+
+58
+mv-DeLIVR: A Deep Learning Based Multivariable TWAS
+Method for Nonlinear Causal Gene Discovery
+Ruoyu He1,2,*, Chunlin Li3
+
+1
+School of Statistics, University of Minnesota, Minneapolis,
+Minnesota, United States of America; 2
+Division of Biostatistics,
+
+4
+Department of Statistics, Florida State University, Tallahassee,
+Florida, United States of America
+Transcriptome-Wise Association Studies (TWAS) have
+
+59
+Polygenic Scores for Estimated Glomerular Filtration Rate
+in a Population of General Adults and Elderly
+Janina M. Herold1
+
+1
+Department of Genetic Epidemiology, University of Regensburg,
+Regensburg, Germany; 2
+Institute of Epidemiology, Helmholtz
+
+60
+The POPGEN Project: Building a French Reference Panel of
+Genomes
+A. F. Herzig1
+
+1
+University Brest, Inserm, EFS, UMR 1078, GGB, IBSAM, Brest, France;
+2
+CHU Brest, Brest, France; 3
+
+61
+A Model for Co-occurrent Assortative Mating and Vertical
+Cultural Transmission and Its Impact on Measures of
+Genetic Associations
+
+1
+Inserm, Univ Brest, EFS, UMR 1078, GGB, Brest, France; 2
+CHRU
+Brest, Brest, France; 3
+
+62
+Genetic Susceptibility to Radiation Therapy Side Effects in
+Childhood Cancer Survivors in Gene-FCCSS Project
+Monia Zidane1
+
+1
+University Paris-Saclay, UVSQ, Inserm, Gustave Roussy, CESP,
+Team “Radiations Epidemiology,” Villejuif, 94805, France;
+2
+
+63
+Genetic Interactions Between Primary Open-Angle
+Glaucoma loci Add Another Layer of Complexity in Disease
+Etiology
+
+1
+Department of Medicine, Division of Genetic Medicine, Vanderbilt
+University School of Medicine, Nashville, Tennessee, United States
+of America; 2
+
+3
+Department of Ophthalmology, University of Groningen,
+University Medical Center Groningen, Groningen, The Netherlands;
+4
+
+64
+Fast and Powerful Mixed-model Association Analysis for
+Genome-wide Association Studies
+Jasper P. Hof1
+
+1
+Radboud University Medical Center, Nijmegen, The Netherlands;
+2
+Aarhus University, Aarhus, Denmark
+
+65
+A Pathway Enrichment Approach to Understand the
+Contributions of Rare Coding Genetic Variants to Sjögren’s
+Disease
+
+1
+National Human Genome Research Institute, National Institutes
+of Health, Bethesda, Maryland, United States of America;
+2
+
+66
+Bayesian Networks Applied to Type 2 Diabetes Data from
+the IMI DIRECT Project
+Richard Howey1
+
+1
+Faculty of Medical Sciences, Newcastle University, Newcastle
+upon Tyne, United Kingdom
+Bayesian networks (BN) can be useful for performing
+
+67
+Conditional Generative Adversarial Network-driven
+Radiomic Prediction of Gene Mutation Status Using
+Magnetic Resonance Images of Breast Cancer
+
+3
+Department of Oncology, Schulich School of Medicine &
+Dentistry, Western University, London, Canada; 4
+Department
+
+68
+Interaction of Lifestyle and Polygenic Risk Scores on
+Colorectal Cancer Risk in the Multiethnic Cohort Study
+Brian Z. Huang1
+
+1
+Department of Population and Public Health Sciences, Keck
+School of Medicine of USC, Los Angeles, California, United
+States of America; 2
+
+70
+Mitochondrial DNA Sequence Analysis of Epithelial Ovarian
+Carcinomas  
+Brooke D. Jorgensen1
+
+1
+Mayo Clinic, Rochester, Minnesota, United States of America;
+2
+Knight Cancer Institute, Oregon Health Sciences University,
+
+71
+Genetic Determinants for Differences in Adult Body Mass
+Change Using Growth Curve Analysis
+Anne E. Justice1*, Navya Shilpa Josyula1
+
+1
+Department of Population Health Sciences, Geisinger, Danville,
+Pennsylvania, United States of America; 2
+Center for Obesity and
+
+72
+Multi-ancestry GWAS of Prostate-specific Antigen Levels
+Identifies Novel Loci and Improves Cross-population
+Prediction
+
+1
+Institute for Human Genetics, University of California San
+Francisco, San Francisco, California, United States of America;
+2
+
+74
+Leveraging the All of Us Biobank to Build Multi-ancestry
+Polygenic Scores for NSAID-induced Gastrointestinal
+Bleeding
+
+1
+Genomics and Computational Biology Graduate Group,
+University of Pennsylvania, Philadelphia, Pennsylvania, United
+States of America; 2
+
+75
+Genome-wide Meta-analysis Identifies Novel Risk loci
+for Uterine Fibroids within and across Multiple Ancestry
+Groups
+
+1
+Vanderbilt University School of Medicine, Vanderbilt; 2
+Vanderbilt
+Genetics Institute, Vanderbilt University; 3
+
+76
+Meta-analysis of Multinomial Genome-wide Association
+Study (GWAS) of Radiographic Knee Osteoarthritis
+Progression
+
+1
+Department of Public Health Sciences, University of Toronto,
+Toronto, Ontario, Canada; 2
+Thurston Arthritis Research Center,
+
+6
+Department of Physiology, Michigan State University, East
+Lansing, Michigan, United States of America; 7
+Center for Molecular
+
+9
+Department of Statistical Sciences, University of Toronto, Toronto,
+Ontario, Canada; 10Department of Biostatistics & Schroeder
+Arthritis Institute, University Health Network, Toronto, Ontario,
+
+77
+Clinical Utility of Polygenic Scores: A Critical 2023 Appraisal
+Sebastian Koch1*, Jörg Schmidtke2,3, Michael Krawczak1
+, Amke
+
+1
+Institute of Medical Informatics and Statistics, Kiel University,
+University Medical Center Schleswig-Holstein, Campus Kiel, 24105
+Kiel, Germany; 2
+
+78
+Bayesian Mixture Model for the Identification of Loci of
+Interest from GWAS Summary Statistics
+Rachit Kumar1,2, Rasika Venkatesh2
+
+1
+Medical Scientist Training Program, Perelman School of Medicine
+at the University of Pennsylvania, United States of America;
+2
+
+79
+ColoQuium: A Software Package for Performing
+Colocalization between QTL and GWAS Analyses and
+Visualizing Colocalization Results
+
+1
+Department of Genetics, University of Pennsylvania, Philadelphia,
+Pennsylvania, United States of America; 2
+Genomics and
+
+6
+Department of Pharmacology, University of Pennsylvania,
+Philadelphia, Pennsylvania, United States of America; 7
+Institute for
+
+80
+Upregulation of Mitochondrial Dynamics is Associated with
+Human Colorectal Cancer in North Indian Population
+Ashok Kumar1
+
+81
+Polygenic Scores for Major Depressive Disorder Provide
+Insights into Medication use Prediction in EHR-linked
+Biobank
+
+82
+The Current Landscape of Chromosome X Integration in
+Polygenic Risk Scores
+Nicholas B. Larson1*, Anthony Batzler1
+
+1
+Department of Quantitative Health Sciences, Mayo Clinic College
+of Medicine and Science, Rochester, Minnesota, United States of
+America, United States of America
+
+83
+The Association between rs6859 in NECTIN2 Gene and
+Alzheimer’s Disease is Partially Mediated by pTau: New
+Findings from ADNI
+
+1
+Biodemography of Aging Research Unit, Social Science Research
+Institute, Duke University, Durham, North Carolina, 27708‐0408,
+United States of America
+
+84
+Localized Multi-Trait Model: Predicting Disease Risks,
+Identifying Variant Associations, and Mapping Trait
+Networks
+
+1
+Department of Biostatistics, Columbia University, New York,
+New York, United States of America; 2
+Department of Medicine, 
+
+4
+Department of Biomedical Informatics, Columbia University, New
+York, New York, United States of America
+Traditional genomic analyses like Genome-Wide
+
+85
+Evaluating Machine Learning Instrumental Variable
+Methods to Estimate Conditional Treatment Effects in
+Mendelian Randomization
+
+1
+Department of Computer Science, McGill University, Montreal,
+Canada; 2
+Mila, Montreal, Canada; 3
+
+86
+Evolutionary Action Analysis of Ultra-rare Genetic Variants
+in African-American Men with Prostate Cancer from the All
+of Us Research Program
+
+1
+Morehouse School of Medicine, Department of Community
+Health and Preventive Medicine, Atlanta Georgia, United States
+of America; 2
+
+89
+A Robust cis-Mendelian Randomization Method with
+Application to Drug Target Discovery
+Zhaotong Lin1*, Wei Pan1
+
+1
+Division of Biostatistics, University of Minnesota, Minneapolis,
+Minnesota, United States of America
+Mendelian randomization (MR) uses genetic variants as
+
+90
+Identification of Epstein-Barr Virus (EBV) Variants in
+Different Specimen Types in Nasopharyngeal Carcinoma
+(NPC)
+
+1
+State Key Laboratory of Oncology in South China, Collaborative
+Innovation Center for Cancer Medicine, Guangdong Key
+Laboratory of Nasopharyngeal Carcinoma Diagnosis and
+
+2
+Department of Otolaryngology, National Taiwan University
+Hospital and National Taiwan University, College of Medicine,
+Taipei, Taiwan; 3
+
+7
+Department of Biostatistics, Harvard T.H. Chan School of Public
+Health, Boston, Massachusetts
+* # Authors contributed equally to this work
+
+91
+HORNET: Software and methods to perform whole-genome
+searches for causal gene networks
+Noah Lorincz-Comi, Yihe Yang, Xiaofeng Zhu
+
+92
+Integrative Proteogenomic Analyses Identify Circulating
+Protein Abundances Associated with the Risk of Type 1
+Diabetes
+
+1
+ Department of Statistical Sciences, Faculty of Arts and Science,
+University of Toronto, Toronto, Ontario, Canada; 2
+ Division of
+
+93
+Disentangling the Shared Genetic Aetiology of Type 2
+Diabetes and Schizophrenia
+Ana Luiza Arruda1,2,3, Golam M. Khandaker4
+
+1
+Institute of Translational Genomics, Helmholtz Munich,
+Neuherberg, 85764, Germany; 2
+Munich School for Data Science,
+
+94
+Insights into the Comorbidity between Type 2 Diabetes and
+Osteoarthritis
+Ana Luiza Arruda,1,2,4 April Hartley,5
+
+1
+Institute of Translational Genomics, Helmholtz Munich,
+Neuherberg, Germany; 2
+Munich School for Data Science,
+
+7
+Corresponding author
+Multimorbidity is a rising public health challenge with
+important implications for health management and policy. The
+
+95
+Inferring the Length Distribution of Gene Conversion Tracts
+Nobuaki Masaki1
+, Sharon R. Browning1
+
+1
+Department of Biostatistics, University of Washington, Seattle,
+Washington, United States of America
+Recombination is a process in which genetic material is
+
+96
+Smoking-Associated Changes in Gene Expression in
+Coronary Artery Disease Patients Using Matched Samples
+Mohammed Merzah1
+
+1
+Department of Public Health and Epidemiology, Faculty
+of Medicine, University of Debrecen, Debrecen, Hungary;
+2
+
+4
+ELKH-DE Public Health Research Group, Department of Public
+Health and Epidemiology, Faculty of Medicine, University of
+Debrecen, Hungary
+
+97
+Comparing the Performance of a Tic Disorder Phenotype
+Risk Score and Polygenic Score in a Large Clinical Biobank
+Tyne W. Miller-Fleming1*, David A. Isaacs2
+
+1
+Division of Genetic Medicine, Vanderbilt Genetics Institute,
+Vanderbilt University Medical Center, Nashville, Tennessee,
+United States of America; 2
+
+99
+Underlying Pleiotropic Connections between Alzheimer’s
+Disease and Its Comorbidities May Contribute to
+Progression
+
+1
+Genomics and Computational Biology Group, University of
+Pennsylvania, Philadelphia, Pennsylvania, United States of
+America; 2
+
+100
+Unraveling the Genetic Architecture of Autoimmune
+Gastritis and Pernicious Anemia
+Brooke M. Morris1*, Austin W. Reynolds1
+
+1
+Department of Anthropology, Baylor University, Waco, Texas,
+United States of America
+Autoimmune gastritis (AIG) is characterized by stomach
+
+101
+Multidimensional Analysis of Pedigree, Epidemiologic, and
+Molecular Data to Identify Risk Factors for ME/CFS
+R.Moslehi1
+
+1
+Schoolof Public Health, University at Albany, Albany, New York,
+United States of America; 2
+National Cancer Institute, National
+
+102
+Using Genetics to Explore the Role of BMI as a Shared Risk
+Factor in Multimorbidity
+Ninon Mounier1
+
+1
+Department of Clinical and Biomedical Sciences, University
+of Exeter Medical School, University of Exeter, Exeter, United
+Kingdom; 2
+
+3
+Patient and Public Involvement Advisor, University of Exeter
+Medical School, University of Exeter, Exeter, United Kingdom;
+4
+
+5
+Nuffield Department of Orthopaedics, Rheumatology and
+Musculoskeletal Sciences (NDORMS), University of Oxford, Oxford,
+United Kingdom; 6
+
+9
+Novo Nordisk Research Centre Oxford, Department of Genetics,
+Oxford, United Kingdom
+Multimorbidity, the co-occurrence of multiple long-term
+
+103
+Impact of Genetic Variations in ACE2 and TMPRSS2 Genes
+on SARS-CoV-2 Infectivity and COVID-19 Disease Variability
+Among Bangladeshi Population
+
+1
+Khulna University, Khulna, Bangladesh, 2
+Dhaka International
+University, Dhaka, Bangladesh, 3
+
+104
+Genetic and Medical Correlates of Long-term Buprenorphine
+Treatment: A Study in the Electronic Health Records
+Maria Niarchou, PhD1
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University Medical
+Center, United States of America; 2
+Department of Psychiatry,
+
+4
+Department of Biomedical Informatics, Vanderbilt University
+Medical Center, United States of America; 5
+Department of
+
+105
+A Novel Computational Paradigm for Cost-efficient and
+Massively Parallel Analysis of Thousands of Genomic
+Models
+
+1
+University of Maryland School of Medicine, Baltimore, Maryland,
+United States of America
+Biobanks such as TOPMed and All of Us (AoU) are generating
+
+106
+Statistical Approach Leveraging Founder Population
+Genealogy and Identical by Descent Segments to Identify
+Rare Variants in Complex Diseases
+
+1
+Départementde Médecine Socialeet Préventive, Université Laval,
+Québec City, Québec, Canada; 2
+Centre derecherche CERVO, Québec
+
+107
+A Genome-wide Association Study of the Three Complement
+System Activation Pathways Implicates Causal Biological
+and Pathological Mechanisms
+
+1
+Institute for Biomedicine (affiliated to the University of
+Lübeck), Eurac Research, Via Volta 21, 39100 Bolzano, Italy;
+2
+
+5
+Computational Medicine, Berlin Institute of Health (BIH) at Charité
+– Universitätsmedizin Berlin, Germany; 6
+MRC Epidemiology Unit,
+
+109
+Identifying Pleiotropy underlying Comorbid Phenotypes
+Using Binomial Regression
+Prasun Panja1,2, Samsiddhi Bhattacharjee2
+
+1
+Regional Centre for Biotechnology, Faridabad, India; 2
+National
+Institute of Biomedical Genomics, Kalyani
+
+110
+Using Different Analytic Approaches to Identify Genetic
+Overlap of Idiopathic Pulmonary Fibrosis and Hypertension
+Gina Parcesepe1,2*, Richard J Allen1,2, Beatriz Guillen-Guio1,2,
+
+1
+Department of Population Health Sciences, University of Leicester,
+Leicester, United Kingdom; 2
+NIHR Leicester Biomedical Research
+
+111
+Testing for Differences in Hardy-Weinberg Disequilibrium
+between Groups
+Andrew D. Paterson1,2*, Elika Garg1
+
+1
+Hospital for Sick Children, Toronto, Ontario, Canada,  2
+University
+of Toronto, Toronto, Ontario, Canada
+
+112
+Multi-omics Reveal Key Molecular Signatures of Severe
+Obesity
+Lauren E. Petty1,2, Hung-Hsin Chen1,2, Priya Sharma3
+
+1
+Department of Medicine, Division of Genetic Medicine, Vanderbilt
+University School of Medicine, Nashville, Tennessee, United
+States of America; 2
+
+6
+Department of Population Health Services, Geisinger Health,
+Danville, Pennsylvania, United States of America; 7
+Department of
+
+113
+Using Mendelian Randomization to Establish Directionality
+of Relationships between Fibroids and Associated
+Genitourinary and Neoplasm Phecodes
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University Medical
+Center, Nashville, Tennessee, United States of America;
+2
+
+3
+Division of Quantitative Science, Department of Obstetrics and
+Gynecology, Vanderbilt University Medical Center, Nashville,
+Tennessee, United States of America; 4
+
+114
+Shared Genetic Architecture and Pleiotropy across Uterine
+Fibroids and Hypertension
+Alexis T. Pigg Akerele 1,2,5,7, Jacklyn N. Hellwege 3,7, Jacqueline A.
+
+1
+School of Graduate Studies, 2
+Department of Microbiology,
+Immunology and Physiology, Meharry Medical College, 3
+
+115
+Characterizing Substructure via Mixture Modeling in Largescale Summary Statistics
+Adelle Price1,4, Hayley R Stoneman1,2, Nikole Scribner Trout1,4,
+Kristy Crooks3
+
+1
+Department of Biomedical Informatics, University of Colorado
+Anschutz Medical Campus, Aurora, Colorado, United States of
+America; 2
+
+4
+Mathematical and Statistical Sciences, University of Colorado
+Denver, Denver, Colorado, United States of America
+Genetic summary data are broadly accessible and highly
+
+116
+Analysis Approaches for Understanding Cross Trait Effects
+of VRK2 in Speech, Language, and Rhythm Phenotypes 1
+Dillon Pruett, 2
+
+117
+Annotation Query (AnnoQ): An Integrated and Interactive
+Platform for Comprehensive Genetic Variant Annotation
+on a Large Scale
+
+1
+Division of Bioinformatics, Department of Population and Public
+Health Sciences, University of Southern California, Los Angeles,
+California, United States of America; 2
+
+118
+Integrating GWAS Summary Statistics, Individual-level
+Genotypic and Omic Data to Enhance the Performance for
+Large-scale Trait Imputation
+
+1
+School of Statistics, University of Minnesota, Minneapolis,
+Minnesota, United States of America; 2
+Division of Biostatistics,
+
+119
+Longitudinal Gene Expression Changes Associated with
+Liver Measures in Hispanic/Latino Population at Risk for
+Metabolic-associated Fatty Liver Disease
+
+1
+Vanderbilt University, Nashville, Tennessee, United States of
+America; 2
+University of North Carolina at Chapel Hill, Chapel Hill,
+
+120
+Ensemble Polygenic Risk Score Development for Coronary
+Heart Disease in Middle Eastern Populations
+Mohamad Saad1*, Nahin Khan1
+
+1
+Qatar Computing Research Institute, Hamad Bin Khalifa
+University, Doha, Qatar; 2
+Hamad Medical Corporation, Doha,
+
+121
+Structural Equation Modeling of Polygenic Risk and
+Environment in Late-Life Depression Using
+Samar Elsheikh, PhD1
+
+1
+Centre for Addiction and Mental Health,Toronto, Ontario,
+Canada; 2
+Colombia University, New York, New York, United
+
+122
+Categorization of Alzheimer’s Disease Risk Variants
+Identifies Tissue-Shared and Tissue-Specific Genetic
+Regulatory Effects
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University, Nashville, TN;
+2
+Clare Hall, Cambridge University, Cambridge, United Kingdom
+
+123
+Colocalization Analysis of Sex-dependent Traits
+Eric J. Sanders*1
+, Lisa J. Strug2,3,4, Deb K. Pal5,6,7
+
+1
+Dalla Lana School of Public Health, The University of Toronto, M5T
+3M7 Toronto, Canada; 2
+Genetics and Genome Biology Program,
+
+3
+Departments of Statistical Sciences and Computer Science and
+Division of Biostatistics, The University of Toronto, M5G 1Z5
+Toronto, Canada; 4
+
+124
+Large-scale Multilayer Proteomics and Multi-omics
+Integration Reveal Molecular Networks Related to
+Alzheimer’s Disease in Diabetic Brains
+
+1
+Department of Epidemiology, Harvard T H Chan School of
+Public Health, Boston, Massachusetts, United States of America;
+2
+
+125
+Multivariable Mendelian Randomization to Disentangle
+the Alcohol Harm Paradox
+Gemma Sawyer1*, Jasmine Khouja1,2, Hannah Sallis1,3, Marcus
+
+1
+MRC Integrative Epidemiology Unit, Population Health Sciences,
+Bristol Medical School, University of Bristol, Bristol, United
+Kingdom; 2
+
+126
+Biobank Scale Analysis of Mendelian Disease
+Alexandra Scalici1,2,*, Tyne Miller-Fleming, PhD1,2, Dharmendra
+Choudhary, PhD1,2, Ela W. Knapik, MD1,2, Nancy J. Cox, PhD1,2
+
+1
+Division of Genetic Medicine, Department of Medicine, Vanderbilt
+University Medical Center, Nashville, Tennessee, United States
+of America; 2
+
+127
+Mendelian Randomization Approaches Lead to Improved
+Understanding of Causal Traits and Genes Associated with
+Stuttering
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University Medical
+Center, Nashville, Tennessee, United States of America; 2
+Hearing
+
+128
+Examination of Nephrotic Syndrome Genetic Architecture
+in Large-Scale Biobanks Replicates Known and Identifies 20
+Novel Loci
+
+1
+Vanderbilt Genetics Institute, Vanderbilt University, Nashville,
+Tennessee, United States of America; 2
+VA Tennessee Valley
+
+6
+Department of Cardiovascular Medicine, Mayo Clinic, Rochester,
+Minnesota, United States of America; 7
+Galatea Bio, Inc. Hialeah,
+
+129
+Genome-wide Association Study of Neuropathology
+Endophenotypes Provides Insights into Dementia Risk
+Factors
+
+1
+Department of Biostatistics, College of Public Health, University of
+Kentucky, Lexington, Kentucky, United States of America; 2
+SandersBrown Center on Aging and Alzheimer’s Disease Research Center,
+
+130
+Network-based Quantitative Trait Linkage Analysis of
+Microbiome Composition in Inflammatory Bowel Disease
+Families
+
+131
+Genome-wide Implementation of Multi-population Joint
+Analysis Marginal Summary Statistics (mJAM) and Its
+Applications in Polygenic Risk Score Models
+
+1
+Division of Biostatistics, Department of Preventive Medicine,
+Keck School of Medicine, University of Southern California, Los
+Angeles, California, United States of America; 2
+
+4
+Norris Comprehensive Cancer Center, University of Southern
+California, Los Angeles, California, United States of America
+Previously we proposed a multi-population fine-mapping
+
+132
+Phenome-Wide Association Study of Polygenic Risk for
+Central Adiposity
+Navya Shilpa Josyula1*; Geetha Chittoor1
+
+1
+Population Health Sciences, Geisinger Health, Danville, PA;
+2
+Department of Epidemiology, University of North Carolina at
+
+3
+Department of Genetics, University of North Carolina at Chapel
+Hill, Chapel Hill, North Carolina, United States of America;
+4
+
+7
+Department of Epidemiology, Emory University Rollins School of
+Public Health, Atlanta, GA
+Abdominal obesity has a high comorbidity burden
+
+133
+Accurate UV Exposure Measure Reveals Novel Variants
+in Genome-wide Association and Interaction Analyses of
+Vitamin D Status
+
+1
+Department of Public Health and Primary Care, Institute of
+Population Health, Trinity College Dublin, Dublin, Ireland;
+2
+
+134
+Two-sample Mendelian Randomization of Major Depressive
+Disorder and Inflammatory Bowel Disease
+Claire L. Simpson1
+
+1
+Department of Genetics, Genomics and Informatics, University
+of Tennessee Health Science Center, Memphis, Tennessee, United
+States of America; 2
+
+135
+A Genetic Association Test Robust to Arbitrary Population
+Structure
+Minsun Song*
+
+136
+Mosaic Loss of Chromosome Y and Telomere Length as Risk
+factors for Alzheimer’s Disease in the Midwestern Amish
+Yeunjoo E. Song1,2,+*, Yining Liu1,2,+, Renee A. Laux1
+
+1
+Department of Population and Quantitative Health Sciences, Case
+Western Reserve University School of Medicine, Cleveland, Ohio,
+United States of America; 2
+
+6
+Brain Health and Memory Center, University Hospital, Cleveland,
+Ohio, United States of America; 7
+Department of Neurology, Case
+
+137
+MagicalRsq-X: A Cross-cohort Transferable Genotype
+Imputation Quality Metric
+Quan Sun1
+
+1
+University of North Carolina at Chapel Hill; 2
+Yale University; 3
+Fred
+
+138
+Whole Exome Sequencing Association Study of Familial
+Bipolar Disorder and Related Conditions in Anabaptist
+Founder Populations
+
+1
+Genetic Basis of Mood and Anxiety Disorder, Human Genetics
+Branch, National Institute of Mental Health, NIH, Bethesda,
+Maryland, United States of America; 2
+
+139
+Drug Repurposing for Alzheimer’s Disease: The Use of
+Genetics-enriched, Neuropathology-associated SPI1
+Regulon in Microglia
+
+1
+Vanderbilt Genetics Institute, Nashville, Tennessee, United States
+of America; 2
+Department of Molecular Physiology and Biophysics,
+
+140
+Empowering Immunogenetic Analysis with Biofilter 3.0 via
+Enhanced Annotation and Filtering Capabilities
+Van Q. Truong1-6, Xueqiong Li2-4, Rasika Venkatesh1-4, Scott M.
+
+1
+Graduate Group in Genomics & Computational Biology, Perelman
+School of Medicine, University of Pennsylvania, United States of
+America; 2
+
+5
+The Penn Institute for Immunology and Immune Health,
+Perelman School of Medicine, University of Pennsylvania, United
+States of America; 6
+
+141
+Investigation on the Genetic Landscape of MT-CO3 in
+Anemic Patients of Tribal Population in the State of Tamil
+Nadu, India
+
+1
+Department of Biotechnology, Karpagam Academy of Higher
+Education (Deemed to be University), Coimbatore 641021, India;
+2
+
+142
+Leveraging Polygenic Scores to Reveal the Interplay of
+Serum Bilirubin, Smoking, and Cancer Risk in a Diverse Los
+Angeles Biobank
+
+1
+Department of Pathology and Laboratory Medicine, David Geffen
+School of Medicine, University of California, Los Angeles, Los
+Angeles, California, United States of America; 2
+
+143
+Rapid Prediction of COVID-19 Vaccine Effectiveness Against
+New Genetic Variants of SARS-CoV-2 by Genome Analysis
+Lirong Cao1,2, Jingzhi Lou3
+
+1
+JC School of Public Health and Primary Care, The Chinese
+University of Hong Kong, Hong Kong SAR, China; 2
+CUHK Shenzhen
+
+5
+Department of Paediatrics, The Chinese University of Hong Kong,
+Hong Kong SAR, China; 6
+Hong Kong Hub of Paediatric Excellence,
+
+7
+Department of Anaesthesia and Intensive Care and Peter Hung
+Pain Research Institute, The Chinese University of Hong Kong,
+Hong Kong SAR, China; 8
+
+9
+Department of Microbiology, The Chinese University of Hong
+Kong, Hong Kong SAR, China; 10Centre for Health Systems and
+Policy Research, The Chinese University of Hong Kong, Hong Kong
+
+144
+Shared Sex-Specific Functional Genetic Risk Factors in SelfReported Clinical Depression and Alzheimer’s Disease
+Ting-Chen Wang1,2, Adam C. Naj3
+, William Bush4
+
+1
+Vanderbilt Genetics Institute and Division of Genetic Medicine,
+Department of Medicine, Vanderbilt University Medical Center,
+Nashville, Tennessee, United States of America; 2
+
+146
+Impact of GWAS Meta-Analysis Heterogeneity on Polygenic
+Prediction Accuracy
+Yuxuan Wang1*, Ching-Ti Liu1
+
+1
+Department of Biostatistics, Boston University School of Public
+Health, Boston, Massachusetts, United States of America
+Various PRS methods have leveraged genome-wide
+
+147
+Mediation Analysis with a Categorical Exposure and a
+Censored Mediator in Genetic Studies
+Jian Wang1
+
+1
+Department of Biostatistics, The University of Texas MD Anderson
+Cancer Center, Houston, Texas, United States of America;
+2
+
+148
+Longitudinal Data Analyses in UK Biobank Identify Novel
+Loci Associated with Kidney Function Decline
+Simon Wiegrebe1,2*, Mathias Gorski1
+
+1
+Department of Genetic Epidemiology, University of Regensburg,
+Regensburg, Germany; 2
+Statistical Consulting Unit StaBLab,
+
+149
+Genetic-by-age Interaction Analyses in UK Biobank and
+Their Potential to Identify Genetic Effects on Longitudinal
+Biomarker Change
+
+1
+Department of Genetic Epidemiology, University of Regensburg,
+Franz-Josef-Strauß-Allee 11, 93053 Regensburg, Germany;
+2
+
+150
+The Contribution of the Proteome in Type 2 Diabetes and
+Osteoarthritis
+Ruby Woodward1
+
+1
+University of Leicester, Leicester, United Kingdom 2
+Univeristy
+of Exeter, Exeter, United Kingdom 3NIHR Leicester Biomedical
+
+151
+Pathway-level Rare Variant Burden Scores Aggregate the
+Effects of Multiple Genes and Associate with Hypertension
+in the Penn Medicine BioBank
+
+1
+Graduate Program in Genomics and Computational Biology,
+University of Pennsylvania, Philadelphia, Pennsylvania, United
+States of America; 2
+
+152
+A Statistical Learning Method for Simultaneous Copy
+Number Estimation and Subclone Clustering with Single
+Cell Sequencing Data
+
+1
+Department of Epidemiology and Biostatistics, Arnold School
+of Public Health, University of South Carolina, Columbia, South
+Carolina, United States of America; 2
+
+153
+Tensor Decomposition of Multi-dimensional Splicing
+Events across Tissues to Identify Splicing-mediated Risk
+Genes Associated with Complex Traits
+
+1
+Department of Biostatistics, Vanderbilt University, Nashville,
+Tennessee, United States of America; 2
+Vanderbilt Genetics Institute,
+
+154
+AI-Enhanced Integration of Genetic and Medical Imaging
+Data for Risk Assessment of Type 2 Diabetes
+Yi-Jia Huang1
+
+1
+Institute of Public Health, National Yang Ming Chiao Tung
+University, Taipei, Taiwan; 2
+Institute of Statistical Science,
+
+155
+Joint Selection of Exposures and Horizontal Pleiotropy in
+Multivariable Mendelian Randomization with Application
+to Causal Gene Identification
+
+156
+Use of Genetic Correlations to Examine Selection Bias
+Chin Yang Shapland, Apostolos Gkatzionis, Gibran Hemani,
+Kate Tilling
+
+157
+Learning Portable Polygenic Risk Score Models with
+Mixtures of Pre-trained Experts to Improve Accuracy across
+the Continuum of Ancestry
+
+1
+School of Computer Science, McGill University, Montreal, Quebec
+Canada; 2
+Department of Human Genetics, McGill University,
+
+158
+Identifying the Genetic Etiology of Selected Muscular
+Dystrophies in Muscular Dystrophy Surveillance, Tracking,
+and Research Network (MD STARnet)
+
+9
+New York State Department of Health, Albany, New York, United
+States of America; 10Department of Neurology, University of South
+Carolina, Columbia, South Carolina, United States of America;
+
+159
+Investigating Ancestry-specific Genetic Variation in
+Apolipoprotein L Genes Associated with Electronic Health
+Record Phenotypes in Patient Biobanks
+
+1
+Department of Genetics, Perelman School of Medicine, University
+of Pennsylvania, 2
+Department of Medicine, Perelman School of
+
+3
+Division of Cardiovascular Medicine, Perelman School of
+Medicine, University of Pennsylvania, United States of America;
+4
+
+2
+ < 0.05) with the APOL1 G1 and G2 known risk alleles for
+renal disease. Replication of this association in up to 121,790
+AFR individuals from the Million Veterans Program also yielded
+
+160
+CellGRN: An Improved Identification Method for Gene
+Regulatory Networks
+Jane Zhao 1
+
+1
+School for Advanced Studies - South; Miami Dade College -
+Kendall, Miami, Florida, United States of America; 2
+Perelman
+
+161
+Using Longitudinal EHRs to Identify Medical Conditions
+Enriched in Individuals who Later Received Diagnosis of
+Alzheimer’s Disease
+
+1
+Department of Medicine, Division of Genetic Medicine, Vanderbilt
+University Medical Center, Nashville, Tennessee, United States
+of America; 2
+
+162
+A Multiomics Machine Learning Approach to Characterize
+Genetic Architecture and Map Traits of Plasma Lipidome in
+Hispanics/Latinos
+
+1
+Division of Genetic Medicine, Department of Medicine, Vanderbilt
+Genetics Institute, Vanderbilt University Medical Center, Nashville,
+Tennessee, United States of America; 2
+
+4
+Baker Department of Cardiometabolic Health, University of
+Melbourne, Parkville, State of Victoria, Australia; 5
+Department of
+
+163
+Genetic Factors for Differentiated Thyroid Cancer in French
+Polynesia: New Candidate Loci
+Monia Zidane1
+
+1
+University Paris-Saclay, UVSQ, Inserm, Gustave Roussy, CESP,
+Team “Radiations Epidemiology”, Villejuif, France; 2
+Centre for
+
+4
+University Paris-Saclay, UVSQ, Inserm, Gustave Roussy, CESP,
+Team “Exposome and Heredity”, Villejuif, France; 5
+Endocrinology
+
+6
+CEA, Laboratoire de Cancérologie Fondamentale, Institut de
+Biologie François Jacob, iRCM, SREIT, Laboratoire de Cancérologie
+Expérimentale (LCE), Université Paris-Saclay, France; 7
+
+164
+Robust Rare Variant Association Testing for Skewed Traits:
+Application to Model-based Disease Predictions in the UK
+Biobank
+
+1
+Regeneron Genetics Center, Tarrytown, New York, United States of
+America
+Machine learning derived traits can enhance the

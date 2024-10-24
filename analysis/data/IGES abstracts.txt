@@ -1,0 +1,155 @@
+Multi-omics Integration Identifies Genes Influencing Traits Associated with Cardiovascular Risks
+Joint Analysis of Longitudinal Omics Data and Time-To-Event Outcomes in the Context of Aging
+The Intergenerational Transmission of Mental Health Disorders: A Systematic Review of Molecular Genetic Studies
+Polygenic Risk Score for Partial Lipodystrophy Based on Clustered Phenotypes – Modelling and Validation in UK Biobank and Oxford Biobank
+Leveraging Identity by Descent within Biobanks to Elucidate Genetic Architecture of Dilated Cardiomyopathy
+A Cloud-Based Bioinformatic Pipeline Tool to Assess Sex-Specific Genetic Effects on Orofacial Cleft Risk using Genome Sequenced Trios
+Revealing Genetic Signatures of Lung Cancer Histologic Subtype Using Deep Learning
+Sex-specific Blood DNA Methylation in Rab-regulatory Genes Underly Sex-biased Risk of Recurrence in Unprovoked Venous Thromboembolism
+Integrating Large-scale Priors for In-silico Functionalization of GWAS Associated Loci Using Machine Learning Models
+Predicting Gene-Driven Cortical Changes in Neurologic Disease through the Neuroimaging PheWAS
+Unravelling the Interplay between Type 2 Diabetes, Genetics, and Metabolite Levels
+Metabolic Reprogramming Induced by Periodic Veganism in Humans
+A Method to Quantify Bias and Identify Spurious Correlations in Biobanks
+Novel Systematic Method for Identifying Congenital Anomaly Cases in the EHR for the Purpose Identifying New Causes of Congenital Anomalies
+Signal Mapping Methods for Region-level Association Adaptive to Local Linkage Disequilibrium (LD)
+Adjusting Collider Bias for Disease Progression Trait Using Bivariate Mendelian Randomization
+Lymphocyte Count-derived Polygenic Score and Interindividual Variability in CD4 T-cell Recovery in Response to Antiretroviral Therapy
+Factors Influencing the Portability of Gene Expression Imputation in Transcriptome-Wide Association Studies across Ancestry
+Autism Heterogeneity Related to Early-life Exposures: Multi-ancestry Results from the SPARK Sample
+Inference of Causal Metabolite Networks in the Presence of Invalid Instrumental Variables with GWAS Summary Data
+Investigating Pleiotropy as an Explanation for the Inverse Association between Cancer and Dementia
+Summary Statistics from Large-scale Gene-environment Interaction Studies for Re-analysis and Meta-analysis
+FlexNet: A Flexible Network-Based Framework for Identifying Drug-Disease Relationships for Repurposing Opportunities and Prediction of Adverse Effects
+Imputation Efficacy Across Global Human Populations
+Genetic Determinants of Coronary Heart Disease in Hispanic/Latinos: Electronic Health Records
+Multi-ancestry Genome-wide Association Studies of ACE Inhibitor-induced Cough and Chronic Dry Cough Implicate Neurophysiological Functions
+APOE4-stratified GWAS of Multiple Cognitive Domains in Non-Hispanic White and Non-Hispanic Black Older Adults
+Comparative Analysis of Whole Exome Sequencing in Bipolar Disorder Case-Control Data
+Exploring Similarities and Differences Between Local Genetic Correlation Methods
+Epigenome-wide Associations with Age and Sex and Asthma
+Integrative Genetic and Exposomic Analysis of Mental Health Problems in Early Childhood
+APOE-ɛ4 and Coronary Artery Disease: Effect Modification by Sex and Gender in a Multi-ancestry Sample from the UK Biobank
+Proteome-wide Mendelian Randomization of Adverse Outcomes in Human Heart Failure
+Genetic Connection between Coronary Artery Disease and Stroke
+Construction, Evaluation, and AOP Framework-based Application of the EpPRS as a Genetic Surrogate for Assessing Environmental Pollutants
+Relating Gene Co-expression qtls to PRSs via Individual-Specific Networks
+Sex Differences in the Genetic Architecture of Alzheimer's Disease Cognitive Endophenotypes
+Coronary Heart Disease and Type 2 Diabetes Metabolomic Signatures in a Middle Eastern Cohort
+X Chromosome Association Study of Asthma
+Genomics Policy Analysis in Precision Medicine with Health Disparity Lens
+Estimation of Prevalence and Carrier Frequency of Wilson's Disease in Thai Population Using Whole-genome Population Data Set
+Direct and INdirect Effects Analysis of Genetic lOci (DINGO): Increasing the Power of Locus Discovery in GWAS Meta-Analyses of Perinatal Phenotypes
+Dimensionality Reduction with Network Regularization in Single-cell Expression Analysis
+Assessing the Causal Effect of SARS-CoV-2 Infection and COVID-19 Severity on Complement System Activation using Mendelian Randomization
+Differential Gene Expression Analysis Reveals Genes Underlying the Transition to T2D in Hispanic/Latino Individuals
+The Sex-specific Genetic Architecture of Childhood Asthma
+Two-sample Mendelian Randomization Study of Circulating Metabolites and Prostate Cancer Risk in Hispanic Populations
+Phenome-wide, Metabolomic and Proteomic Association Scan of SHROOM3 Haplotypes Based on Imputed Exonic Variants
+Exploring Fine-Mapping Using "SuSiE" on Simulated and Real Data
+Cross-ancestry GWAS Meta-analysis of Keloids Discovers Novel Susceptibility Loci in Diverse Populations
+Accounting for Genetic Regulation Alters Pregnancy Exposure-associated Differential Gene Expression Detected in Umbilical Cord Blood
+Rare Variant Analysis in Small Samples: Improving Power Through Coupling Rare Variant Burden Analysis with Gene Set Enrichment
+Discovery of Genetic Factors for Atypical Antipsychotic-Induced BMI Change: Obesity Related to Antipsychotic Liability & Exposure (ORAcLE) Consortium
+Unraveling Genetic Associations and Ancestral Influences on Fibroproliferative Diseases
+Identifying Rare Non-coding Genetic Aggregate Associations for Height in 331,100 Whole-genome Sequences
+mv-DeLIVR: A Deep Learning Based Multivariable TWAS Method for Nonlinear Causal Gene Discovery
+Polygenic Scores for Estimated Glomerular Filtration Rate in a Population of General Adults and Elderly
+The POPGEN Project: Building a French Reference Panel of Genomes
+A Model for Co-occurrent Assortative Mating and Vertical Cultural Transmission and Its Impact on Measures of Genetic Associations
+Genetic Susceptibility to Radiation Therapy Side Effects in Childhood Cancer Survivors in Gene-FCCSS Project
+Genetic Interactions Between Primary Open-Angle Glaucoma loci Add Another Layer of Complexity in Disease Etiology
+Fast and Powerful Mixed-model Association Analysis for Genome-wide Association Studies
+A Pathway Enrichment Approach to Understand the Contributions of Rare Coding Genetic Variants to Sjögren's Disease
+Bayesian Networks Applied to Type 2 Diabetes Data from the IMI DIRECT Project
+Conditional Generative Adversarial Network-driven Radiomic Prediction of Gene Mutation Status Using Magnetic Resonance Images of Breast Cancer
+Interaction of Lifestyle and Polygenic Risk Scores on Colorectal Cancer Risk in the Multiethnic Cohort Study
+Mitochondrial DNA Sequence Analysis of Epithelial Ovarian Carcinomas
+Genetic Determinants for Differences in Adult Body Mass Change Using Growth Curve Analysis
+Multi-ancestry GWAS of Prostate-specific Antigen Levels Identifies Novel Loci and Improves Cross-population Prediction
+Leveraging the All of Us Biobank to Build Multi-ancestry Polygenic Scores for NSAID-induced Gastrointestinal Bleeding
+Genome-wide Meta-analysis Identifies Novel Risk loci for Uterine Fibroids within and across Multiple Ancestry Groups
+Meta-analysis of Multinomial Genome-wide Association Study (GWAS) of Radiographic Knee Osteoarthritis Progression
+Clinical Utility of Polygenic Scores: A Critical 2023 Appraisal
+Bayesian Mixture Model for the Identification of Loci of Interest from GWAS Summary Statistics
+ColoQuium: A Software Package for Performing Colocalization between QTL and GWAS Analyses and Visualizing Colocalization Results
+Upregulation of Mitochondrial Dynamics is Associated with Human Colorectal Cancer in North Indian Population
+Polygenic Scores for Major Depressive Disorder Provide Insights into Medication use Prediction in EHR-linked Biobank
+The Current Landscape of Chromosome X Integration in Polygenic Risk Scores
+The Association between rs6859 in NECTIN2 Gene and Alzheimer's Disease is Partially Mediated by pTau: New Findings from ADNI
+Localized Multi-Trait Model: Predicting Disease Risks, Identifying Variant Associations, and Mapping Trait Networks
+Evaluating Machine Learning Instrumental Variable Methods to Estimate Conditional Treatment Effects in Mendelian Randomization
+Evolutionary Action Analysis of Ultra-rare Genetic Variants in African-American Men with Prostate Cancer from the All of Us Research Program
+A Robust cis-Mendelian Randomization Method with Application to Drug Target Discovery
+Identification of Epstein-Barr Virus (EBV) Variants in Different Specimen Types in Nasopharyngeal Carcinoma (NPC)
+HORNET: Software and methods to perform whole-genome searches for causal gene networks
+Integrative Proteogenomic Analyses Identify Circulating Protein Abundances Associated with the Risk of Type 1 Diabetes
+Disentangling the Shared Genetic Aetiology of Type 2 Diabetes and Schizophrenia
+Insights into the Comorbidity between Type 2 Diabetes and Osteoarthritis
+Inferring the Length Distribution of Gene Conversion Tracts
+Smoking-Associated Changes in Gene Expression in Coronary Artery Disease Patients Using Matched Samples
+Comparing the Performance of a Tic Disorder Phenotype Risk Score and Polygenic Score in a Large Clinical Biobank
+Underlying Pleiotropic Connections between Alzheimer’s Disease and Its Comorbidities May Contribute to Progression
+Unraveling the Genetic Architecture of Autoimmune Gastritis and Pernicious Anemia
+Multidimensional Analysis of Pedigree, Epidemiologic, and Molecular Data to Identify Risk Factors for ME/CFS
+Using Genetics to Explore the Role of BMI as a Shared Risk Factor in Multimorbidity
+Impact of Genetic Variations in ACE2 and TMPRSS2 Genes on SARS-CoV-2 Infectivity and COVID-19 Disease Variability Among Bangladeshi Population
+Genetic and Medical Correlates of Long-term Buprenorphine Treatment: A Study in the Electronic Health Records
+A Novel Computational Paradigm for Cost-efficient and Massively Parallel Analysis of Thousands of Genomic Models
+Statistical Approach Leveraging Founder Population Genealogy and Identical by Descent Segments to Identify Rare Variants in Complex Diseases
+A Genome-wide Association Study of the Three Complement System Activation Pathways Implicates Causal Biological and Pathological Mechanisms
+Identifying Pleiotropy underlying Comorbid Phenotypes Using Binomial Regression
+Using Different Analytic Approaches to Identify Genetic Overlap of Idiopathic Pulmonary Fibrosis and Hypertension
+Testing for Differences in Hardy-Weinberg Disequilibrium between Groups
+Multi-omics Reveal Key Molecular Signatures of Severe Obesity
+Using Mendelian Randomization to Establish Directionality of Relationships between Fibroids and Associated Genitourinary and Neoplasm Phecodes
+Shared Genetic Architecture and Pleiotropy across Uterine Fibroids and Hypertension
+Characterizing Substructure via Mixture Modeling in Large-scale Summary Statistics
+Analysis Approaches for Understanding Cross Trait Effects of VRK2 in Speech, Language, and Rhythm Phenotypes
+Annotation Query (AnnoQ): An Integrated and Interactive Platform for Comprehensive Genetic Variant Annotation on a Large Scale
+Integrating GWAS Summary Statistics, Individual-level Genotypic and Omic Data to Enhance the Performance for Large-scale Trait Imputation
+Longitudinal Gene Expression Changes Associated with Liver Measures in Hispanic/Latino Population at Risk for Metabolic-associated Fatty Liver Disease
+Ensemble Polygenic Risk Score Development for Coronary Heart Disease in Middle Eastern Populations
+Structural Equation Modeling of Polygenic Risk and Environment in Late-Life Depression
+Categorization of Alzheimer's Disease Risk Variants Identifies Tissue-Shared and Tissue-Specific Genetic Regulatory Effects
+Colocalization Analysis of Sex-dependent Traits
+Large-scale Multilayer Proteomics and Multi-omics Integration Reveal Molecular Networks Related to Alzheimer's Disease in Diabetic Brains
+Multivariable Mendelian Randomization to Disentangle the Alcohol Harm Paradox
+Biobank Scale Analysis of Mendelian Disease
+Mendelian Randomization Approaches Lead to Improved Understanding of Causal Traits and Genes Associated with Stuttering
+Examination of Nephrotic Syndrome Genetic Architecture in Large-Scale Biobanks Replicates Known and Identifies 20 Novel Loci
+Genome-wide Association Study of Neuropathology Endophenotypes Provides Insights into Dementia Risk Factors
+Network-based Quantitative Trait Linkage Analysis of Microbiome Composition in Inflammatory Bowel Disease Families
+Genome-wide Implementation of Multi-population Joint Analysis Marginal Summary Statistics (mJAM) and Its Applications in Polygenic Risk Score Models
+Phenome-Wide Association Study of Polygenic Risk for Central Adiposity
+Accurate UV Exposure Measure Reveals Novel Variants in Genome-wide Association and Interaction Analyses of Vitamin D Status
+Two-sample Mendelian Randomization of Major Depressive Disorder and Inflammatory Bowel Disease
+A Genetic Association Test Robust to Arbitrary Population Structure
+Mosaic Loss of Chromosome Y and Telomere Length as Risk factors for Alzheimer's Disease in the Midwestern Amish
+MagicalRsq-X: A Cross-cohort Transferable Genotype Imputation Quality Metric
+Whole Exome Sequencing Association Study of Familial Bipolar Disorder and Related Conditions in Anabaptist Founder Populations
+Drug Repurposing for Alzheimer's Disease: The Use of Genetics-enriched, Neuropathology-associated SPI1 Regulon in Microglia
+Empowering Immunogenetic Analysis with Biofilter 3.0 via Enhanced Annotation and Filtering Capabilities
+Investigation on the Genetic Landscape of MT-CO3 in Anemic Patients of Tribal Population in the State of Tamil Nadu, India
+Leveraging Polygenic Scores to Reveal the Interplay of Serum Bilirubin, Smoking, and Cancer Risk in a Diverse Los Angeles Biobank
+Rapid Prediction of COVID-19 Vaccine Effectiveness Against New Genetic Variants of SARS-CoV-2 by Genome Analysis
+Shared Sex-Specific Functional Genetic Risk Factors in Self-Reported Clinical Depression and Alzheimer's Disease
+Impact of GWAS Meta-Analysis Heterogeneity on Polygenic Prediction Accuracy
+Mediation Analysis with a Categorical Exposure and a Censored Mediator in Genetic Studies
+Longitudinal Data Analyses in UK Biobank Identify Novel Loci Associated with Kidney Function Decline
+Genetic-by-age Interaction Analyses in UK Biobank and Their Potential to Identify Genetic Effects on Longitudinal Biomarker Change
+The Contribution of the Proteome in Type 2 Diabetes and Osteoarthritis
+Pathway-level Rare Variant Burden Scores Aggregate the Effects of Multiple Genes and Associate with Hypertension in the Penn Medicine BioBank
+A Statistical Learning Method for Simultaneous Copy Number Estimation and Subclone Clustering with Single Cell Sequencing Data
+Tensor Decomposition of Multi-dimensional Splicing Events across Tissues to Identify Splicing-mediated Risk Genes Associated with Complex Traits
+AI-Enhanced Integration of Genetic and Medical Imaging Data for Risk Assessment of Type 2 Diabetes
+Joint Selection of Exposures and Horizontal Pleiotropy in Multivariable Mendelian Randomization with Application to Causal Gene Identification
+Use of Genetic Correlations to Examine Selection Bias
+Learning Portable Polygenic Risk Score Models with Mixtures of Pre-trained Experts to Improve Accuracy across the Continuum of Ancestry
+Identifying the Genetic Etiology of Selected Muscular Dystrophies in Muscular Dystrophy Surveillance, Tracking, and Research Network (MD STARnet)
+Investigating Ancestry-specific Genetic Variation in Apolipoprotein L Genes Associated with Electronic Health Record Phenotypes in Patient Biobanks
+CellGRN: An Improved Identification Method for Gene Regulatory Networks
+Using Longitudinal EHRs to Identify Medical Conditions Enriched in Individuals who Later Received Diagnosis of Alzheimer's Disease
+A Multiomics Machine Learning Approach to Characterize Genetic Architecture and Map Traits of Plasma Lipidome in Hispanics/Latinos
+Genetic Factors for Differentiated Thyroid Cancer in French Polynesia: New Candidate Loci
+Robust Rare Variant Association Testing for Skewed Traits: Application to Model-based Disease Predictions in the UK Biobank
